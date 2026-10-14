@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Reservation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-box">
+        <h2>Grand Hotel Reservation Form</h2>
+        
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td class="label">Name</td>
+                    <td><input type="text" name="guest_name" value="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td class="label">eMail</td>
+                    <td><input type="text" name="email" value="info@hotel.com"></td>
+                </tr>
+                <tr>
+                    <td class="label">Mobile No</td>
+                    <td><input type="text" name="mobile" value="Enter your number"></td>
+                </tr>
+                <tr>
+                    <td class="label">Arrival Time</td>
+                    <td><input type="text" name="arrival" value="Enter arrival time"></td>
+                </tr>
+                <tr>
+                    <td class="label">Departure</td>
+                    <td>
+                        <input type="text" name="departure_date">
+                        <input type="text" name="departure_time">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Room Type</td>
+                    <td>
+                        <input type="radio" name="room" value="single"> Single
+                        <input type="radio" name="room" value="double"> Double <br>
+                        <input type="radio" name="room" value="presidential"> Executive Suite
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Preferences</td>
+                    <td>
+                        <input type="checkbox" name="pref" value="non-smoking"> Non-Smoking <br>
+                        <input type="checkbox" name="pref" value="internet"> Internet <br>
+                        <input type="checkbox" name="pref" value="mattress"> Firm Mattress
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Mode of Payment</td>
+                    <td>
+                        <input type="checkbox" name="pay" value="cash"> Cash
+                        <input type="checkbox" name="pay" value="check"> Check <br>
+                        <input type="checkbox" name="pay" value="card"> Credit Card
+                        <select name="card_type">
+                            <option value="select">Select Card</option>
+                            <option value="visa">Visa</option>
+                            <option value="master">MasterCard</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="btn-container">
+                <input type="submit" value="Send Data">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
